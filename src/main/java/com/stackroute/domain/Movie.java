@@ -32,9 +32,9 @@ public class Movie implements ApplicationContextAware, BeanNameAware,BeanFactory
     Movie moviecontext;
 
 
-    public ApplicationContext getContext() {
-        return context;
-    }
+//    public ApplicationContext getContext() {
+//        return context;
+//    }
 
     public void setActor(Actor actor) {
         this.actor = actor;
@@ -51,8 +51,8 @@ public class Movie implements ApplicationContextAware, BeanNameAware,BeanFactory
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.context=applicationContext;
-        moviecontext= (Movie)context.getBean("movie",Movie.class);
-        moviecontext.print();
+        moviecontext= (Movie)context.getBean(Movie.class);
+       // moviecontext.print();
     }
 
     @Override
@@ -63,7 +63,7 @@ public class Movie implements ApplicationContextAware, BeanNameAware,BeanFactory
     @Override
     public void setBeanFactory(BeanFactory bean) throws BeansException {
         this.bean = bean;
-        moviecontext= (Movie)bean.getBean("movie",Movie.class);
-        moviecontext.print();
+        moviecontext= (Movie)bean.getBean(Movie.class);
+        //moviecontext.print();
     }
 }
