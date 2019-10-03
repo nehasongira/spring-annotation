@@ -19,7 +19,7 @@ public class Config {
     {
         return new Actor("robert","male",33);
     }
-  
+
 
 }
 

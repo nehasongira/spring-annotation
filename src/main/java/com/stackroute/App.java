@@ -17,14 +17,8 @@ public class App
     {
         ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
         Movie movie=context.getBean(Movie.class);
-        Movie movie1=context.getBean(Movie.class);
-        if(movie==movie1)
-        {
-            System.out.println("true");
-        }
-        else
-            System.out.println("false");
-        movie.print();
+       // Movie movie1=context.getBean(Movie.class);
+
 
 
        // System.out.println( "Hello World!" );
