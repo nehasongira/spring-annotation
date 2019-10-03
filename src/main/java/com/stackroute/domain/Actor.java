@@ -4,6 +4,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Actor {
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     private String name;
     private String gender;
     private int age;
