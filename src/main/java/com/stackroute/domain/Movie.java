@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component;
 public class Movie {
 
 
+    public void setActor(Actor actor) {
+        this.actor = actor;
+    }
 
     @Autowired
 
      Actor actor;
-    public Movie(Actor actor) {
-        this.actor = actor;
-    }
 
     public Movie() {
 
