@@ -18,12 +18,12 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
-        BeanLifecycleDemoBean lc=context.getBean(BeanLifecycleDemoBean.class);
+      //  BeanLifecycleDemoBean lc=context.getBean(BeanLifecycleDemoBean.class);
 
         Movie movie=context.getBean(Movie.class);
         // movie.print();
 
-        ((ConfigurableApplicationContext)context).close();
+       // ((ConfigurableApplicationContext)context).close();
 
        // System.out.println( "Hello World!" );
     }
